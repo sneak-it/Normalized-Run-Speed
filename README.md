@@ -1,6 +1,7 @@
-# Normalized-Run-Speed
+# Normalized Run Speed
 
-Normalize your players run speed across all weapons!
+Normalize your players run speed across all weapons!  
+This is recommended for bhop/surf servers, so players will have the same run speed, regardless of weapon. This is well paired with `sv_accelerate_use_weapon_speed 0`.
 
 # Dependencies:
 
@@ -12,7 +13,7 @@ This was only released in an unfinished state due to an incomplete, unpolished v
 
 # To-Do:
 
-- Add convar for maximum customizable run speed
+- Add convar for maximum customizable run speed (currently hardcoded to 260 u/s)
 - Add convar for entirely enabling/disabling plugin
 
 # Credits
