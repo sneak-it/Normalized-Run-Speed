@@ -5,7 +5,7 @@ This is recommended for bhop/surf servers, so players will have the same run spe
 
 # Dependencies:
 
-DHooks
+[DHooks](https://forums.alliedmods.net/showthread.php?t=180114)
 
 # This is a Work In Progress
 
@@ -15,6 +15,7 @@ This was only released in an unfinished state due to an incomplete, unpolished v
 
 - Add convar for maximum customizable run speed (currently hardcoded to 260 u/s)
 - Add convar for entirely enabling/disabling plugin
+- Add convar for usage on specific teams only (if requested)
 
 # Credits
 
