@@ -22,6 +22,8 @@ bool g_bAccUseWeaponSpeed;
 
 float g_fSetPlayerMaxSpeed;
 
+int g_iHookID;
+
 
 public void OnLibraryAdded(const char[] name)
 {
@@ -89,9 +91,14 @@ public void OnPluginStart()
 
 public void OnClientPutInServer(int client)
 {
-	if (LibraryExists("dhooks"))
+	if (LibraryExists("dhooks") && g_bRunspeedEnabled)
 	{
-		DHookEntity(g_hGetPlayerMaxSpeed, true, client);
+		g_iHookID = DHookEntity(g_hGetPlayerMaxSpeed, true, client);
+	}
+	//Remove the hooks
+	if (g_hGetPlayerMaxSpeed != null && !g_bRunspeedEnabled)
+	{
+		DHookRemoveHookID(g_iHookID);
 	}
 }
 
