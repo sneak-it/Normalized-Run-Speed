@@ -104,7 +104,6 @@ public MRESReturn DHook_GetMaxPlayerSpeed(int client, Handle hReturn)
 	}
 
 	DHookSetReturn(hReturn, g_fSetPlayerMaxSpeed);
-	//DHookSetReturn(hReturn, 250.0);
 
 	return MRES_Override;
 }
