@@ -53,7 +53,7 @@ void Dhooks()
 void ConVarInit() {
 	gCV_RunspeedEnabled = CreateConVar("sm_rs_enabled", "1", "1: plugin enabled (default); 0: plugin disabled", FCVAR_NOTIFY);
 	gCV_SetPlayerMaxSpeed = CreateConVar("sm_rs_playerspeed", "250.0", "Maximum runspeed for players");
-	gCV_AccUseWeaponSpeed = FindConVar("sv_accelerate_use_weapon_speed"); //1 = acceleration based on weapon max speed
+	gCV_AccUseWeaponSpeed = FindConVar("sv_accelerate_use_weapon_speed");
 
 	g_bRunspeedEnabled = GetConVarBool(gCV_RunspeedEnabled);
 	HookConVarChange(gCV_RunspeedEnabled, OnRunspeedSettingsChanged);
@@ -130,6 +130,9 @@ void OnRunspeedSettingsChanged(Handle convar, const char[] oldValue, const char[
 	if (convar == gCV_AccUseWeaponSpeed)
 		if (g_bRunspeedEnabled)
 			gCV_AccUseWeaponSpeed.BoolValue = false;
+
+	if (g_bAccUseWeaponSpeed && g_bRunspeedEnabled)
+		gCV_AccUseWeaponSpeed.BoolValue = false;
 
 	for (int i = 0; i < MaxClients; i++)
 		if (IsValidClient(i))
