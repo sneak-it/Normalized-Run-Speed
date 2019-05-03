@@ -6,7 +6,7 @@ public Plugin myinfo =
 	name = "Normalized Run Speed",
 	author = "sneaK",
 	description = "Allows customizable run speed with any weapon",
-	version = "0.5",
+	version = "0.6",
 	url = "https://snksrv.com"
 };
 
@@ -21,7 +21,6 @@ bool g_bRunspeedEnabled;
 float g_fSetPlayerMaxSpeed;
 
 int g_iHookID;
-
 
 public void OnLibraryAdded(const char[] name)
 {
