@@ -7,16 +7,13 @@ This is recommended for bhop/surf servers, so players will have the same run spe
 
 [DHooks](https://forums.alliedmods.net/showthread.php?t=180114)
 
-# This is a Work In Progress
-
-This was only released in an unfinished state due to an incomplete, unpolished version getting shared, despite my wishes.
-
 # To-Do:
 
-- Add convar for maximum customizable run speed (currently hardcoded to 260 u/s)
-- Add convar for entirely enabling/disabling plugin
 - Add convar for usage on specific teams only (if requested)
+- Multi-game support
 
 # Credits
 
-Shavit for the method, SM9 for help years ago with this.
+- [shavit](https://github.com/shavitush) for the method
+- [SM9](https://github.com/sm91337) for help years ago with this
+- [Tonrax](https://github.com/Tonrax) for adding cvars
