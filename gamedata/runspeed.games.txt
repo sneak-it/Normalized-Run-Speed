@@ -7,7 +7,7 @@
 			"GetPlayerMaxSpeed"
 			{
 				"windows"	"505"
-				"linux"		"506"
+				"linux"		"507"
 				"mac"		"506"
 			}
 		}
