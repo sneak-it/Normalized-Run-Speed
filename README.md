@@ -1,7 +1,10 @@
 # Normalized Run Speed
 
 Normalize your players run speed across all weapons!  
+
 This is recommended for bhop/surf servers, so players will have the same run speed, regardless of weapon. This is well paired with `sv_accelerate_use_weapon_speed 0`.
+
+Currently supports CS:GO and CS:S.
 
 # Dependencies:
 
