@@ -6,14 +6,13 @@ This is recommended for bhop/surf servers, so players will have the same run spe
 
 Currently supports CS:GO and CS:S.
 
-# Dependencies:
+# Runtime Dependencies:
 
-[DHooks](https://forums.alliedmods.net/showthread.php?t=180114)
+DHooks, now included in SourceMod 1.11 6820 and newer. If using an older version, look into [this](https://forums.alliedmods.net/showthread.php?t=180114) thread.
 
 # To-Do:
 
-- Add convar for usage on specific teams only (if requested)
-- Multi-game support
+- Support more games
 
 # Credits
 
